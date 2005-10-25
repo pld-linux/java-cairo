@@ -1,6 +1,6 @@
 %define		pname	cairo-java
 Summary:	Java interface for Cairo library
-Summary(pl):	Wrapper Java dla biblioteki Cairo
+Summary(pl):	Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
 Version:	1.0.0
 Release:	1
@@ -12,6 +12,7 @@ URL:		http://java-gnome.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cairo-devel >= 0.9.3
+BuildRequires:	fontconfig-devel >= 1:2.3.1
 BuildRequires:	gcc-java >= 5:3.3.2
 BuildRequires:	java-glib-devel >= 0.2.0
 BuildRequires:	libtool
@@ -23,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Java interface for the Cairo library.
 
 %description -l pl
-Wrapper Java dla biblioteki Cairo.
+Wrapper Javy dla biblioteki Cairo.
 
 %package devel
 Summary:	Header files for java-cairo library
@@ -31,6 +32,7 @@ Summary(pl):	Pliki nag³ówkowe biblioteki java-cairo
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	cairo-devel >= 0.9.3
+Requires:	fontconfig-devel >= 1:2.3.1
 Requires:	java-glib-devel >= 0.2.0
 
 %description devel
