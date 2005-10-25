@@ -30,6 +30,8 @@ Summary:	Header files for java-cairo library
 Summary(pl):	Pliki nag³ówkowe biblioteki java-cairo
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	cairo-devel >= 0.9.3
+Requires:	java-glib-devel >= 0.2.0
 
 %description devel
 Header files for java-cairo library.
