@@ -33,7 +33,7 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	cairo-devel >= 0.9.3
 Requires:	fontconfig-devel >= 1:2.3.1
-Requires:	java-glib-devel >= 0.2.1
+Requires:	java-glib-devel >= 0.2.4
 
 %description devel
 Header files for java-cairo library.
