@@ -2,19 +2,19 @@
 Summary:	Java interface for Cairo library
 Summary(pl):	Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
-Version:	1.0.2
+Version:	1.0.3
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://research.operationaldynamics.com/linux/java-gnome/dist/%{pname}-%{version}.tar.gz
-# Source0-md5:	cc2c90fec19cdcafd177463e85595120
+# Source0-md5:	b78cd6b58c8f3b55db4edb5477855525
 URL:		http://java-gnome.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cairo-devel >= 0.9.3
 BuildRequires:	fontconfig-devel >= 1:2.3.1
 BuildRequires:	gcc-java >= 5:3.3.2
-BuildRequires:	java-glib-devel >= 0.2.1
+BuildRequires:	java-glib-devel >= 0.2.4
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,7 +50,7 @@ Pliki nag³ówkowe biblioteki java-cairo.
 %{__automake}
 %{__autoconf}
 %configure \
-	GCJ_JAR=`echo %{_datadir}/java/libgcj*.jar` \
+	JAR=%{_bindir}/fastjar \
 	--without-javadocs
 %{__make}
 
