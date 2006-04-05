@@ -3,7 +3,7 @@ Summary:	Java interface for Cairo library
 Summary(pl):	Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://research.operationaldynamics.com/linux/java-gnome/dist/%{pname}-%{version}.tar.gz
