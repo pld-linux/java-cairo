@@ -2,19 +2,19 @@
 Summary:	Java interface for Cairo library
 Summary(pl):	Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/cairo-java/1.0/%{pname}-%{version}.tar.gz
-# Source0-md5:	9713bcd3ea2724737dafdd2640baec44
+# Source0-md5:	9519ef144ce0f4c5d04d5b98a7893b38
 URL:		http://java-gnome.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	cairo-devel >= 1.2.2
-BuildRequires:	fontconfig-devel >= 1:2.3.1
+BuildRequires:	cairo-devel >= 1.2.4
+BuildRequires:	fontconfig-devel >= 1:2.4.1
 BuildRequires:	gcc-java >= 5:3.3.2
-BuildRequires:	java-glib-devel >= 0.3.1
+BuildRequires:	java-glib-devel >= 0.4.0
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,9 +31,9 @@ Summary:	Header files for java-cairo library
 Summary(pl):	Pliki nag³ówkowe biblioteki java-cairo
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	cairo-devel >= 1.2.2
-Requires:	fontconfig-devel >= 1:2.3.1
-Requires:	java-glib-devel >= 0.3.1
+Requires:	cairo-devel >= 1.2.4
+Requires:	fontconfig-devel >= 1:2.4.1
+Requires:	java-glib-devel >= 0.4.0
 
 %description devel
 Header files for java-cairo library.
