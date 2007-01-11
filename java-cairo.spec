@@ -51,7 +51,6 @@ Pliki nag³ówkowe biblioteki java-cairo.
 %{__autoconf}
 %configure \
 	GCJFLAGS="%{rpmcflags}" \
-	JAR=%{_bindir}/fastjar \
 	--without-javadocs \
 	--enable-pdf
 %{__make}
