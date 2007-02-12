@@ -1,6 +1,6 @@
 %define		pname	cairo-java
 Summary:	Java interface for Cairo library
-Summary(pl):	Wrapper Javy dla biblioteki Cairo
+Summary(pl.UTF-8):   Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
 Version:	1.0.8
 Release:	1
@@ -23,12 +23,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Java interface for the Cairo library.
 
-%description -l pl
+%description -l pl.UTF-8
 Wrapper Javy dla biblioteki Cairo.
 
 %package devel
 Summary:	Header files for java-cairo library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki java-cairo
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki java-cairo
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	cairo-devel >= 1.2.4
@@ -38,8 +38,8 @@ Requires:	java-glib-devel >= 0.4.2
 %description devel
 Header files for java-cairo library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki java-cairo.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki java-cairo.
 
 %prep
 %setup -q -n %{pname}-%{version}
