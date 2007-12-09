@@ -34,6 +34,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	cairo-devel >= 1.2.4
 Requires:	fontconfig-devel >= 1:2.4.1
 Requires:	java-glib-devel >= 0.4.2
+Requires:	jpackage-utils
 
 %description devel
 Header files for java-cairo library.
@@ -71,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README 
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_libdir}/libcairo*-1.0.so
 
 %files devel
