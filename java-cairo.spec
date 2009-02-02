@@ -3,7 +3,7 @@ Summary:	Java interface for Cairo library
 Summary(pl.UTF-8):	Wrapper Javy dla biblioteki Cairo
 Name:		java-cairo
 Version:	1.0.8
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Libraries/Java
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/cairo-java/1.0/%{pname}-%{version}.tar.bz2
@@ -19,6 +19,7 @@ BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		macros	%{_datadir}/glib-java/macros
+%define		specflags	-fPIC
 
 %description
 Java interface for the Cairo library.
