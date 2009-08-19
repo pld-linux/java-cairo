@@ -14,6 +14,7 @@ BuildRequires:	automake
 BuildRequires:	cairo-devel >= 1.2.4
 BuildRequires:	fontconfig-devel >= 1:2.4.1
 BuildRequires:	gcc-java >= 5:3.3.2
+BuildRequires:	jar
 BuildRequires:	java-glib-devel >= 0.4.2
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
